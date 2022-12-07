@@ -81,6 +81,8 @@ $(shell mkdir -p $(sort $(OBJ_DIR)))
 $(DEST): $(OBJS) $(OBJS2) $(OBJS3)
 	$(foreach thirddir, $(THIRDPARTY_PATH), $(call call_thirdparty_make,$(PWD_PATH)/$(thirddir)))
 	@echo
+	@echo "THIRDPARTY_PATH: $(THIRDPARTY_PATH)"
+	@echo "THIRDPARTY_NAME: $(THIRDPARTY_NAME)"
 	@echo "[0;32;1mINC_DIR: $(INC_DIR)[0;33;1m"
 	@echo
 	@echo "[0;32;1m$(CXX) -o $@ $^ $(LDFLAGS)[0;33;1m"
