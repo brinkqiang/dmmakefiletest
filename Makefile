@@ -21,7 +21,7 @@ THIRDPARTY_NAME = $(shell $(if $(wildcard $(PWD_PATH)/thirdparty),ls ./thirdpart
 ###############################################################################
 
 define call_thirdparty_link
-	$(if $(wildcard $(1)/Makefile),LIBS += -l$(1),)
+	$(if $(wildcard $(PWD_PATH)/thirdparty/$(1)/Makefile),LIBS += -l$(1),)
 endef
 
 define call_thirdparty_make
