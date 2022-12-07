@@ -83,7 +83,6 @@ $(DEST): $(OBJS) $(OBJS2) $(OBJS3)
 	@echo "LIBS: $(LIBS)"
 	@echo "THIRDPARTY_PATH: $(THIRDPARTY_PATH)"
 	@echo "THIRDPARTY_NAME: $(THIRDPARTY_NAME)"
-	@echo "THIRDPARTY_NAME: $(THIRDPARTY_NAME)"
 	@echo "[0;32;1mINC_DIR: $(INC_DIR)[0;33;1m"
 	@echo
 	@echo "[0;32;1m$(CXX) -o $@ $^ $(LDFLAGS)[0;33;1m"
