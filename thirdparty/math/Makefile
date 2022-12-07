@@ -46,7 +46,7 @@ $(foreach thirdname, $(THIRDPARTY_NAME), $(eval $(call call_thirdparty_link,$(th
 
 DEST_DIR = $(ROOT_PATH)/bin/$(BUILD_CONFIG_NAME)
 
-DEST_NAME = math.so
+DEST_NAME = libmath.so
 
 OUTPUT = $(ROOT_PATH)/build/$(BUILD_CONFIG_NAME)/math
 
